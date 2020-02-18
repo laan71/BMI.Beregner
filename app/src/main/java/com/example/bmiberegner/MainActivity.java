@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String height = editText.getText().toString();
-                String weight = editText2.getText().toString();
+                String height = editText2.getText().toString();
+                String weight = editText.getText().toString();
                 final double weightToInt = Double.parseDouble(weight);
                 final double heightToInt = Double.parseDouble(height);
                 double result = BMI.calc(weightToInt, heightToInt);
